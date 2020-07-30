@@ -1,25 +1,33 @@
 package loaders;
 
+import controller.CtrlBarragem;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.Barragem;
 
-public class WindowBarragem extends Application{
+import java.io.IOException;
 
-        public static void main(String[] args) {
-            launch(args);
-        }
+public class WindowBarragem {
 
-        @Override
-        public void start(Stage primaryStage) throws Exception {
+
+        public void start(Barragem b) throws Exception {
             FXMLLoader loader =  new FXMLLoader();
-            Pane graph = loader.load(getClass().getResource("../view/FXMLBarragem.fxml"));
+            try {
+                Pane graph = loader.load(getClass().getResource("../view/FXMLBarragem.fxml").openStream());
 
-            Scene scene = new Scene(graph, 300, 500);
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("Classes vs Students");
-            primaryStage.show();
+                CtrlBarragem crtl = loader.getController();
+                crtl.show(b);
+
+                Scene scene = new Scene(graph, 700, 450);
+                Stage primaryStage = new Stage();
+                primaryStage.setScene(scene);
+                primaryStage.setTitle("Barragem");
+                primaryStage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 }

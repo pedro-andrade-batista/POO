@@ -1,12 +1,13 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class Barragem {
+
+public class Barragem{
     private String nome,cidade;
     private int identificadorAbalos;
     private List<Dispositivos> dispositivos = new ArrayList<>();
+
 
     public Barragem(String nome, String cidade) {
         this.nome = nome;
@@ -37,5 +38,17 @@ public class Barragem {
     public void setIdentificadorAbalos(int identificadorAbalos) {
         this.identificadorAbalos = identificadorAbalos;
     }
+
+    public void addDispositivos(Dispositivos d){
+        dispositivos.add(d);
+    }
+
+    public void removeDispositivos(Dispositivos d){
+        dispositivos.remove(d);
+    }
+    public List<Dispositivos> getDispositivos() {
+        return dispositivos;
+    }
+
 
 }
