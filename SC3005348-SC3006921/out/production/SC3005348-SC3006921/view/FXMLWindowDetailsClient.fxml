@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="btnSave" prefHeight="466.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WindowDetailsClientController">
+   <children>
+      <Label layoutX="27.0" layoutY="82.0" text="Name:" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="82.0" />
+      <Label layoutX="324.0" layoutY="82.0" text="Email:" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="82.0" />
+      <Label layoutX="534.0" layoutY="82.0" text="Phone Number:" AnchorPane.leftAnchor="534.0" AnchorPane.topAnchor="82.0" />
+      <Label layoutX="418.0" layoutY="154.0" text="Vehicles" AnchorPane.leftAnchor="418.0" AnchorPane.topAnchor="154.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="23.0" text="Client" AnchorPane.leftAnchor="431.0" AnchorPane.topAnchor="23.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="27.0" layoutY="427.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="205.0" text="Back" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="27.0" />
+      <TextField fx:id="txtName" layoutX="68.0" layoutY="78.0" prefHeight="25.0" prefWidth="205.0" />
+      <TextField fx:id="txtPhone" layoutX="630.0" layoutY="78.0" />
+      <TextField fx:id="txtEmail" layoutX="362.0" layoutY="78.0" />
+      <Label layoutX="26.0" layoutY="222.0" text="Registration Plate: " AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="26.0" />
+      <Label layoutX="303.0" layoutY="222.0" text="Model:" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="303.0" />
+      <Label layoutX="518.0" layoutY="225.0" text="Color:" AnchorPane.bottomAnchor="224.0" AnchorPane.leftAnchor="518.0" />
+      <Label layoutX="715.0" layoutY="225.0" text="Brand:" AnchorPane.bottomAnchor="224.0" AnchorPane.leftAnchor="715.0" />
+      <Button fx:id="BtnSave" layoutX="656.0" layoutY="427.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="205.0" text="Save" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="656.0" />
+      <TextField fx:id="txtRegistration" layoutX="137.0" layoutY="218.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="137.0" />
+      <TextField fx:id="txtModel" layoutX="355.0" layoutY="218.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="355.0" />
+      <TextField fx:id="txtColor" layoutX="556.0" layoutY="221.0" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="556.0" />
+      <TextField fx:id="txtBrand" layoutX="759.0" layoutY="221.0" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="759.0" />
+      <ComboBox fx:id="cbType" layoutX="759.0" layoutY="284.0" prefWidth="150.0" AnchorPane.bottomAnchor="157.0" AnchorPane.leftAnchor="759.0" />
+      <Label layoutX="27.0" layoutY="304.0" text="Additional Info:" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="27.0" />
+      <TextArea fx:id="txtInformation" layoutX="129.0" layoutY="302.0" prefHeight="80.0" prefWidth="537.0" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="129.0" />
+      <Label layoutX="718.0" layoutY="288.0" text="Type:" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="718.0" />
+      <CheckBox fx:id="ckClientVip" layoutX="842.0" layoutY="82.0" mnemonicParsing="false" text="Vip" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="842.0" />
+   </children>
+</AnchorPane>

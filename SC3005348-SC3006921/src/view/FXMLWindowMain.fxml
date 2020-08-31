@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WindowMainController">
+    <children>
+        <TableView fx:id="tableMain" layoutX="19.0" layoutY="99.0" prefHeight="236.0" prefWidth="776.0" AnchorPane.bottomAnchor="127.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="99.0">
+            <columns>
+                <TableColumn fx:id="cName" prefWidth="226.00001525878906" text="Name" />
+                <TableColumn fx:id="cEmail" prefWidth="250.0" text="Email" />
+                <TableColumn fx:id="cPhoneNumber" prefWidth="197.0" text="PhoneNumber" />
+                <TableColumn fx:id="cClientVip" minWidth="0.0" prefWidth="97.0" text="Vip" />
+            </columns>
+        </TableView>
+        <Label layoutX="17.0" layoutY="62.0" prefHeight="17.0" prefWidth="84.0" text="Filter Table:" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="62.0" />
+        <TextField fx:id="txtFilterTable" layoutX="86.0" layoutY="58.0" onKeyReleased="#filter" prefHeight="25.0" prefWidth="620.0" promptText="Search " AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="58.0" />
+        <Button layoutX="473.0" layoutY="416.0" mnemonicParsing="false" onAction="#showAddClient" prefHeight="32.0" prefWidth="121.0" text="Add Client" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="10.0" />
+        <Label layoutX="355.0" layoutY="14.0" prefHeight="32.0" prefWidth="121.0" text="Car-Wash" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="329.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnRemove" layoutX="251.0" layoutY="416.0" mnemonicParsing="false" onAction="#remove" prefHeight="32.0" prefWidth="121.0" text="Remove" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="251.0" />
+        <CheckBox fx:id="ckFilterVip" layoutX="741.0" layoutY="62.0" mnemonicParsing="false" onAction="#filterCheck" text="VIP" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="62.0" />
+        <Button layoutX="32.0" layoutY="416.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="32.0" prefWidth="121.0" text="Details" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="32.0" />
+        <Button layoutX="471.0" layoutY="416.0" mnemonicParsing="false" onAction="#showWindowServices" prefHeight="32.0" prefWidth="121.0" text="Add Services" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="213.0" />
+    </children>
+</AnchorPane>

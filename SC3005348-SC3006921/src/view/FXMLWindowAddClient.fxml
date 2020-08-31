@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="557.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WindowClientController">
+   <children>
+      <Button fx:id="btnBack" layoutX="29.0" layoutY="494.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="247.0" text="Back" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="29.0" />
+      <Button fx:id="btnSave" layoutX="340.0" layoutY="494.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="247.0" text="Save" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="340.0" />
+      <Label layoutX="24.0" layoutY="65.0" text="Name:" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="65.0" />
+      <Label layoutX="339.0" layoutY="124.0" text="Email:" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="124.0" />
+      <Label layoutX="24.0" layoutY="124.0" text="Phone Number:" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="124.0" />
+      <TextField fx:id="txtEmail" layoutX="381.0" layoutY="120.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="120.0" />
+      <TextField fx:id="txtName" layoutX="82.0" layoutY="61.0" prefHeight="25.0" prefWidth="381.0" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="61.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="120.0" layoutY="120.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="120.0" />
+      <CheckBox fx:id="ckClientVip" layoutX="512.0" layoutY="65.0" mnemonicParsing="false" text="VIP" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="65.0" />
+      <Label layoutX="18.0" layoutY="247.0" text="Registration Plate:" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="18.0" />
+      <Label layoutX="363.0" layoutY="247.0" text="Brand: " AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="363.0" />
+      <Label layoutX="43.0" layoutY="292.0" text="Color:" AnchorPane.bottomAnchor="224.0" AnchorPane.leftAnchor="43.0" />
+      <Label layoutX="367.0" layoutY="313.0" text="Type:" AnchorPane.bottomAnchor="203.0" AnchorPane.leftAnchor="367.0" />
+      <TextField fx:id="txtRegistrationPlate" layoutX="138.0" layoutY="243.0" prefHeight="25.0" prefWidth="169.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="138.0" />
+      <TextField fx:id="txtBrand" layoutX="438.0" layoutY="243.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="438.0" />
+      <TextField fx:id="txtColor" layoutX="118.0" layoutY="288.0" prefHeight="25.0" prefWidth="169.0" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="118.0" />
+      <Label layoutX="21.0" layoutY="367.0" text="Additional Information:" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="21.0" />
+      <TextArea fx:id="txtInfo" layoutX="153.0" layoutY="367.0" prefHeight="98.0" prefWidth="433.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="153.0" AnchorPane.rightAnchor="14.0" />
+      <Label layoutX="261.0" layoutY="180.0" prefHeight="39.0" prefWidth="102.0" text="Vehicle" textAlignment="CENTER" AnchorPane.leftAnchor="261.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="14.0" text="Client" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtModel" layoutX="118.0" layoutY="330.0" prefHeight="25.0" prefWidth="169.0" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="118.0" />
+      <Label layoutX="42.0" layoutY="358.0" text="Model" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="42.0" />
+      <ComboBox fx:id="cbTypeVehicle" layoutX="409.0" layoutY="309.0" prefWidth="150.0" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="409.0" />
+   </children>
+</AnchorPane>
